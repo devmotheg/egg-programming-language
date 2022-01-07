@@ -1,0 +1,140 @@
+/*!
+ * @author Mohamed Muntasir
+ * @link https://github.com/devmotheg
+ */
+
+/* General */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 20px;
+	--main-bg-color: #202124;
+	--err-bg-color: #290000;
+	--main-border-color: #919191;
+	--err-border-color: #5c0000;
+	--text-color1: #e8eaed;
+	--text-color2: #35d4c7;
+	--text-color3: #9980ff;
+	--text-color4: #367cf1;
+	--text-color5: #ff8080;
+}
+
+::selection {
+	background: var(--text-color4);
+	color: var(--text-color1);
+}
+
+body {
+	min-width: 600px;
+	font-family: cursive;
+}
+
+a {
+	text-align: center;
+	display: block;
+	padding: 0.8rem;
+	color: var(--text-color1);
+	background: var(--main-bg-color);
+	font-weight: bold;
+	text-decoration: none;
+	width: fit-content;
+	margin: 0.4rem auto;
+	transition: 0.2s;
+	border-radius: 4px;
+}
+
+a:hover {
+	color: var(--text-color4);
+}
+
+i {
+	font-size: 30px;
+}
+
+/* Editor */
+
+.container {
+	display: flex;
+	justify-content: center;
+	gap: 0.8rem;
+	margin-bottom: 0.4rem;
+}
+
+.container > div {
+	background: var(--main-bg-color);
+	border-radius: 4px;
+}
+
+.editor__title {
+	color: var(--text-color1);
+	padding: 0.5rem;
+	border-bottom: 1px solid var(--main-border-color);
+	text-align: center;
+}
+
+.editor__code,
+.editor__log {
+	background: transparent;
+	min-width: 270px;
+	width: 45vw;
+	max-width: 670px;
+	height: 550px;
+	font-size: inherit;
+	font-family: inherit;
+	padding: 1rem;
+}
+
+.editor__code {
+	color: var(--text-color2);
+	resize: none;
+	border: none;
+	outline: none;
+	display: block;
+	tab-size: 2;
+}
+
+.editor__log {
+	overflow: auto;
+}
+
+.log-error,
+.log-byte {
+	padding: 4px;
+	word-wrap: break-word;
+	margin: 6px;
+}
+
+.log-error {
+	background: var(--err-bg-color);
+	color: var(--text-color5);
+	border: 1px solid var(--err-border-color);
+}
+
+.log-byte {
+	color: var(--text-color3);
+}
+
+.button {
+	background: transparent;
+	color: var(--text-color1);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	display: block;
+	font-size: 1.2rem;
+	font-family: inherit;
+	padding: 0.8rem 0;
+	width: 100%;
+	transition: 0.2s;
+	border-top: 1px solid var(--main-border-color);
+}
+
+.button:hover {
+	color: var(--text-color4);
+}
