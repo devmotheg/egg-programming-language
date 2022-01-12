@@ -87,6 +87,7 @@ i {
 	font-size: inherit;
 	font-family: inherit;
 	padding: 1rem;
+	overflow: scroll;
 }
 
 .editor__code {
@@ -96,10 +97,6 @@ i {
 	outline: none;
 	display: block;
 	tab-size: 2;
-}
-
-.editor__log {
-	overflow: auto;
 }
 
 .log-error,
