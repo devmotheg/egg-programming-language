@@ -26,7 +26,7 @@ Egg is a general purpose high level mathematical and functional programming lang
 
 ## Language syntax
 
-## Declaring bindings
+### Declaring bindings
 
 If you're declaring a variable for the first use the special form `def`\
 If you're changing an existing variable use the special form `set`
