@@ -1,6 +1,6 @@
 # Egg Programming Language
 
-Inspired from Eloquent's JS book! ツ
+Inspired from Eloquent JS book! ツ
 
 Egg is a general purpose high level mathematical and functional programming language created for fun built on top of JavaScript, it supports simple features like, bindings, scopes, functions, closure, recursive calls, if/while/do applications, comments, & basic arithmetic/comparison operations.
 
